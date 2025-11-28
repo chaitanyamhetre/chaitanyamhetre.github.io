@@ -1,124 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chaitanya Mhetre | Portfolio</title>
-
-    <!-- OpenGraph metadata for LinkedIn preview -->
-    <meta property="og:title" content="Chaitanya Mhetre – Portfolio">
-    <meta property="og:description" content="Machine Learning & AI Engineer with experience in multimodal ML, computer vision, and data-driven solutions.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chaitanyamhetre.github.io/">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .contact a {
-            text-decoration: none;
-            color: #0066cc;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chaitanya Mhetre — Portfolio</title>
+  <meta name="description" content="Portfolio of Chaitanya Mhetre — AI / ML Engineer specializing in multimodal models, computer vision and industrial automation.">
+  <style>
+    :root{--accent:#0b5cff;--muted:#6b7280;--bg:#0f1724;color-scheme: light dark}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#f7fafc,#fff);color:#0f1724}
+    .container{max-width:960px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#22c55e);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{font-size:1.6rem;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav a{color:var(--accent);text-decoration:none;margin-left:12px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .section-title{font-weight:600;margin-bottom:12px}
+    .timeline{list-style:none;padding:0;margin:0}
+    .timeline li{margin-bottom:14px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef2ff;padding:6px 10px;border-radius:999px;font-size:0.9rem}
+    .contact a{display:inline-block;margin-right:8px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:56px;height:56px}}
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">CM</div>
+        <div>
+          <h1>Chaitanya Mhetre</h1>
+          <p class="lead">AI / ML Engineer • Multimodal Models • Computer Vision • Industrial Automation</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#journey">Journey</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <h1>Chaitanya Mhetre</h1>
+    <div class="grid">
+      <main>
+        <section id="journey" class="card">
+          <div class="section-title">My Journey</div>
+          <p>I began my engineering path in Mumbai, where I completed a Bachelor's degree in Electrical Engineering in 2019. After graduation, I joined ETAP Automation as a Junior Electrical Engineer, supporting projects for the Kuwait Oil Company and building technical libraries and documentation workflows.</p>
+          <p>In 2021 I moved to Germany to pursue a Master of Science in Electrical Engineering at the University of Stuttgart. During my studies my interests shifted towards software, automation and data-driven methods — eventually focusing on machine learning and computer vision for industrial applications.</p>
+          <p>At Mercedes‑Benz I developed Python tools for telematics reporting and worked on automatic wirelist extraction from wiring diagrams using OCR, ML and generative methods. For my master's thesis at ILH I implemented multimodal transformer models for fault diagnosis of GaN-HEMT transistors, improving classification performance and gaining deep experience with multimodal data.</p>
+        </section>
 
-    <div class="section contact">
-        <p><strong>Email:</strong> <a href="mailto:mhetrechaitanya97@gmail.com">mhetrechaitanya97@gmail.com</a><br>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chaitanya-mhetre/">linkedin.com/in/chaitanya-mhetre</a><br>
-        <strong>GitHub:</strong> <a href="https://github.com/chaitanyamhetre">github.com/chaitanyamhetre</a><br>
-        <strong>Location:</strong> Stuttgart, Germany</p>
+        <section id="experience" class="card" style="margin-top:18px">
+          <div class="section-title">Experience</div>
+          <ul class="timeline">
+            <li>
+              <strong>Working Student — Mercedes‑Benz AG</strong> <br><small class="muted">Nov 2024 – Sep 2025</small>
+              <div>Worked on AI-driven wirelist generation from wiring diagrams (OCR, transformers, dataset building).</div>
+            </li>
+            <li>
+              <strong>Master's Thesis — ILH, Universität Stuttgart</strong> <br><small class="muted">Oct 2024 – Apr 2025</small>
+              <div>Developed multimodal ML models for GaN‑HEMT fault diagnosis; achieved +11.67% accuracy vs. baseline.</div>
+            </li>
+            <li>
+              <strong>Working Student — Mercedes‑Benz AG</strong> <br><small class="muted">Jul 2023 – Jul 2024</small>
+              <div>Built Python tools for automated data extraction from JIRA and internal systems; automated Excel reporting.</div>
+            </li>
+            <li>
+              <strong>Research — Institute for Automation Technology & Software Systems</strong> <br><small class="muted">Jul 2023 – Jul 2024</small>
+              <div>Implemented a Python–MATLAB Simulink interface and XML parsing automation for model parameter extraction.</div>
+            </li>
+            <li>
+              <strong>Junior Electrical Engineer — ETAP Automation Pvt. Ltd.</strong> <br><small class="muted">Jul 2019 – Aug 2021</small>
+              <div>Supported KOC projects, prepared SLDs and cable plans, and built ETAP libraries.</div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:18px">
+          <div class="section-title">Selected Projects</div>
+          <ul>
+            <li><strong>Wirelist Extraction (Mercedes‑Benz)</strong> — OCR + Transformer pipeline to extract wiring information and generate wirelists from vehicle schematics.</li>
+            <li><strong>Multimodal Fault Diagnosis (MSc Thesis)</strong> — Combined S-parameters and TDR data with transformer models for transistor fault classification.</li>
+            <li><strong>Telematics Reporting Tools</strong> — Python ETL tools to pull and structure data from JIRA/MBinside into Excel reports.</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Quick Info</div>
+          <p><strong>Location:</strong> Stuttgart, Germany</p>
+          <p><strong>Email:</strong> mhetrechaitanya97@gmail.com</p>
+          <p><strong>Phone:</strong> +49 17671776873</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chaitanya-mhetre/" target="_blank">chaitanya-mhetre</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/chaitanyamhetre" target="_blank">chaitanyamhetre</a></p>
+
+          <div style="margin-top:12px">
+            <a href="#contact" style="display:inline-block;padding:10px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none">Contact Me</a>
+            <!-- If you want a CV download, put the CV PDF in the same folder and change the href below: -->
+            <!-- <a href="ChaitanyaMhetre_Lebenslauf.pdf" download style="display:inline-block;margin-left:8px;padding:10px 12px;border-radius:8px;border:1px solid #e6e9ef;text-decoration:none;color:var(--accent);background:white">Download CV</a> -->
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title">Skills</div>
+          <div class="skill-list">
+            <span class="skill">Python</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">OCR</span>
+            <span class="skill">Transformers</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">Azure ML</span>
+            <span class="skill">Power BI</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title">Education</div>
+          <p><strong>M.Sc. Electrical Engineering</strong><br>University of Stuttgart — Focus: automation, ML, deep learning</p>
+          <p style="margin-top:8px"><strong>B.E. Electrical Engineering</strong><br>University of Mumbai</p>
+        </div>
+
+        <div class="card" id="contact" style="margin-top:18px">
+          <div class="section-title">Contact</div>
+          <p>If you'd like to work together or have questions, email me at <a href="mailto:mhetrechaitanya97@gmail.com">mhetrechaitanya97@gmail.com</a> or connect on LinkedIn.</p>
+        </div>
+      </aside>
     </div>
 
-    <div class="section">
-        <h2>Profile</h2>
-        <p>
-            Result-oriented Machine Learning & AI Engineer with a Master's in Electrical Engineering (University of Stuttgart),
-            and hands-on experience at Mercedes-Benz and research institutes.
-            Skilled in Python, deep learning, multimodal models, and automation. Passionate about building
-            practical AI solutions for real industrial applications.
-        </p>
-    </div>
+    <footer>
+      © <span id="year"></span> Chaitanya Mhetre — Built with ❤️
+    </footer>
+  </div>
 
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python, C/C++, Java, SQL</li>
-            <li><strong>ML/DL:</strong> TensorFlow, PyTorch, Scikit-learn, Keras, OpenCV</li>
-            <li><strong>Data:</strong> Pandas, NumPy, Matplotlib, Power BI, Tableau</li>
-            <li><strong>Tools:</strong> Azure ML, Git, REST APIs, JIRA, Confluence</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Experience</h2>
-
-        <h3>Working Student – Mercedes-Benz AG (Nov 2024 – Sept 2025)</h3>
-        <ul>
-            <li>Developed ML-based modules for automatic wirelist extraction from wiring diagrams.</li>
-            <li>Used OCR, computer vision, and transformer models for wire identification.</li>
-            <li>Created training datasets and pattern analysis for multiple vehicle models.</li>
-        </ul>
-
-        <h3>Master Thesis – University of Stuttgart (Oct 2024 – Apr 2025)</h3>
-        <ul>
-            <li>Built a multimodal ML model to detect failures in GaN-HEMT transistors using S-parameters and TDR data.</li>
-            <li>Compared unimodal and multimodal transformer models and improved accuracy by 11.67%.</li>
-            <li>Performed statistical failure pattern analysis and diagnostic optimization.</li>
-        </ul>
-
-        <h3>Working Student – Mercedes-Benz AG (Jul 2023 – Jul 2024)</h3>
-        <ul>
-            <li>Created Python automation tools for JIRA/MBinside data extraction.</li>
-            <li>Built automated Excel comparison reports and milestone overviews.</li>
-            <li>Improved data quality and reduced manual reporting workload.</li>
-        </ul>
-
-        <h3>Research Project – University of Stuttgart (Jul 2023 – Jul 2024)</h3>
-        <ul>
-            <li>Implemented a communication interface between Python and MATLAB Simulink.</li>
-            <li>Developed an XML parser for automated Simulink model parameter extraction.</li>
-        </ul>
-
-        <h3>Junior Electrical Engineer – ETAP Automation Pvt. Ltd. (Jul 2019 – Aug 2021)</h3>
-        <ul>
-            <li>Worked on projects for Kuwait Oil Company involving SLDs, cable plans, and load lists.</li>
-            <li>Built protective device and cable libraries for ETAP software.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>M.Sc. Electrical Engineering</strong>, University of Stuttgart (2021–2025)</li>
-            <li><strong>Bachelor in Electrical Engineering</strong>, University of Mumbai (2015–2019)</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Languages</h2>
-        <ul>
-            <li>English – C1</li>
-            <li>German – A2 (currently learning B1)</li>
-        </ul>
-    </div>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
