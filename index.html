@@ -1,187 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chaitanya Mhetre — Portfolio</title>
-  <meta name="description" content="Portfolio of Chaitanya Mhetre — AI / ML Engineer specializing in multimodal models, computer vision and industrial automation.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Portfolio of Chaitanya Mhetre" />
+  <meta name="author" content="Chaitanya Mhetre" />
+  <title>Chaitanya Mhetre - Portfolio</title>
+
+  <!-- Bootstrap + Resume Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-resume/7.0.7/css/styles.css" rel="stylesheet" />
+
   <style>
-    :root{--accent:#0b5cff;--muted:#6b7280;--bg:#0f1724;color-scheme: light dark}
-    *{box-sizing:border-box}
-    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#f7fafc,#fff);color:#0f1724}
-    .container{max-width:960px;margin:40px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#22c55e);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    h1{font-size:1.6rem;margin:0}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-    nav a{color:var(--accent);text-decoration:none;margin-left:12px}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px}
-    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
-    .section-title{font-weight:600;margin-bottom:12px}
-    .timeline{list-style:none;padding:0;margin:0}
-    .timeline li{margin-bottom:14px}
-    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#eef2ff;padding:6px 10px;border-radius:999px;font-size:0.9rem}
-    .contact a{display:inline-block;margin-right:8px}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
-    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:56px;height:56px}}
+    /* TIMELINE STYLES */
+    .timeline-container { position: relative; padding: 60px 0; }
+    .timeline-line { height: 6px; background: #000; margin: 40px 0; border-radius: 4px; }
+    .t-item { position: absolute; transform: translateX(-50%); width: 200px; text-align: center; }
+    .t-dot { width: 40px; height: 40px; background: #ffcc33; border-radius: 50%; margin: 0 auto; border: 4px solid white; box-shadow: 0 0 0 3px black; }
+    .t-date { font-weight: bold; color: #0b5cff; margin-top: 6px; font-size: 0.9rem; }
+    .t-title { font-weight: 600; margin-top: 10px; font-size: 0.95rem; }
+    .t-desc { font-size: 0.85rem; color: #6b7280; }
+    @media(max-width: 900px) {
+      .t-item { position: relative; transform: none; width: 100%; margin-bottom: 40px; }
+      .timeline-line { display: none; }
+    }
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="avatar">CM</div>
-        <div>
-          <h1>Chaitanya Mhetre</h1>
-          <p class="lead">AI / ML Engineer • Multimodal Models • Computer Vision • Industrial Automation</p>
+
+<body id="page-top">
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Chaitanya Mhetre</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://via.placeholder.com/200" alt="Profile" />
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#journey">My Journey</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-fluid p-0">
+
+    <!-- ABOUT -->
+    <section class="resume-section" id="about">
+      <div class="resume-section-content">
+        <h1 class="mb-0">Chaitanya <span class="text-primary">Mhetre</span></h1>
+        <div class="subheading mb-5">AI / ML Engineer · Multimodal Models · Computer Vision · Industrial Automation<br />
+          <a href="mailto:mhetrechaitanya97@gmail.com">mhetrechaitanya97@gmail.com</a>
+        </div>
+        <p class="lead mb-5">
+          AI/ML Engineer with experience in multimodal models, computer vision, and industrial ML applications at Mercedes-Benz.
+        </p>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- MY JOURNEY -->
+    <section class="resume-section" id="journey">
+      <div class="resume-section-content">
+        <h2 class="mb-5">My Journey</h2>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <div class="t-item" style="left:10%">
+            <div class="t-dot"></div>
+            <div class="t-date">2015 – 2019</div>
+            <div class="t-title">Bachelor of Electrical Engineering<br>University of Mumbai</div>
+            <div class="t-desc">Electrical systems & engineering fundamentals</div>
+          </div>
+
+          <div class="t-item" style="left:35%">
+            <div class="t-dot"></div>
+            <div class="t-date">2023 – 2024</div>
+            <div class="t-title">Mercedes-Benz AG<br>Working Student</div>
+            <div class="t-desc">Python automation tools for telematics reporting</div>
+          </div>
+
+          <div class="t-item" style="left:60%">
+            <div class="t-dot"></div>
+            <div class="t-date">2024 – 2025</div>
+            <div class="t-title">Master Thesis (ILH)<br>University of Stuttgart</div>
+            <div class="t-desc">Multimodal ML for GaN-HEMT fault diagnosis</div>
+          </div>
+
+          <div class="t-item" style="left:85%">
+            <div class="t-dot"></div>
+            <div class="t-date">2024 – 2025</div>
+            <div class="t-title">Mercedes-Benz AG<br>AI/ML Working Student</div>
+            <div class="t-desc">Wirelist extraction using OCR & transformers</div>
+          </div>
         </div>
       </div>
-      <nav>
-        <a href="#journey">Journey</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    </section>
 
-    <div class="grid">
-      <main>
-        <section id="journey" class="card">
-  <div class="section-title">My Journey</div>
-  <style>
-    .timeline-wrap{position:relative;padding:40px 0}
-    .timeline-line{height:6px;background:#0f1724;margin:40px 0;border-radius:4px}
-    .t-item{position:absolute;transform:translateX(-50%);text-align:center;width:180px}
-    .t-dot{width:38px;height:38px;background:#ffcc33;border-radius:50%;margin:0 auto;border:4px solid white;box-shadow:0 0 0 3px #0f1724}
-    .t-date{color:#0b5cff;font-weight:600;margin-top:6px;font-size:0.9rem}
-    .t-title{font-weight:600;margin-top:10px}
-    .t-desc{font-size:0.85rem;color:#6b7280;margin-top:4px}
-  </style>
+    <hr class="m-0" />
 
-  <div class="timeline-wrap">
-    <div class="timeline-line"></div>
+    <!-- EXPERIENCE -->
+    <section class="resume-section" id="experience">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Experience</h2>
 
-    <div class="t-item" style="left:10%">
-      <div class="t-dot"></div>
-      <div class="t-date">2015 – 2019</div>
-      <div class="t-title">Bachelor of Electrical Engineering<br>University of Mumbai</div>
-      <div class="t-desc">Bachelor thesis in Electrical Systems</div>
-    </div>
-
-    <div class="t-item" style="left:32%">
-      <div class="t-dot"></div>
-      <div class="t-date">2023 – 2024</div>
-      <div class="t-title">Mercedes-Benz AG<br>Working Student</div>
-      <div class="t-desc">Python tools for automation & reporting</div>
-    </div>
-
-    <div class="t-item" style="left:54%">
-      <div class="t-dot"></div>
-      <div class="t-date">2024 – 2025</div>
-      <div class="t-title">Master Thesis (ILH)<br>University of Stuttgart</div>
-      <div class="t-desc">Multimodal ML fault diagnosis (GaN-HEMT)</div>
-    </div>
-
-    <div class="t-item" style="left:78%">
-      <div class="t-dot"></div>
-      <div class="t-date">2024 – 2025</div>
-      <div class="t-title">Mercedes-Benz AG<br>AI/ML Working Student</div>
-      <div class="t-desc">Wirelist generation using OCR & Transformers</div>
-    </div>
-
-  </div>
-</section>
-
-        <section id="experience" class="card" style="margin-top:18px">
-          <div class="section-title">Experience</div>
-          <ul class="timeline">
-            <li>
-              <strong>Working Student — Mercedes‑Benz AG</strong> <br><small class="muted">Nov 2024 – Sep 2025</small>
-              <div>Worked on AI-driven wirelist generation from wiring diagrams (OCR, transformers, dataset building).</div>
-            </li>
-            <li>
-              <strong>Master's Thesis — ILH, Universität Stuttgart</strong> <br><small class="muted">Oct 2024 – Apr 2025</small>
-              <div>Developed multimodal ML models for GaN‑HEMT fault diagnosis; achieved +11.67% accuracy vs. baseline.</div>
-            </li>
-            <li>
-              <strong>Working Student — Mercedes‑Benz AG</strong> <br><small class="muted">Jul 2023 – Jul 2024</small>
-              <div>Built Python tools for automated data extraction from JIRA and internal systems; automated Excel reporting.</div>
-            </li>
-            <li>
-              <strong>Research — Institute for Automation Technology & Software Systems</strong> <br><small class="muted">Jul 2023 – Jul 2024</small>
-              <div>Implemented a Python–MATLAB Simulink interface and XML parsing automation for model parameter extraction.</div>
-            </li>
-            <li>
-              <strong>Junior Electrical Engineer — ETAP Automation Pvt. Ltd.</strong> <br><small class="muted">Jul 2019 – Aug 2021</small>
-              <div>Supported KOC projects, prepared SLDs and cable plans, and built ETAP libraries.</div>
-            </li>
-          </ul>
-        </section>
-
-        <section id="projects" class="card" style="margin-top:18px">
-          <div class="section-title">Selected Projects</div>
-          <ul>
-            <li><strong>Wirelist Extraction (Mercedes‑Benz)</strong> — OCR + Transformer pipeline to extract wiring information and generate wirelists from vehicle schematics.</li>
-            <li><strong>Multimodal Fault Diagnosis (MSc Thesis)</strong> — Combined S-parameters and TDR data with transformer models for transistor fault classification.</li>
-            <li><strong>Telematics Reporting Tools</strong> — Python ETL tools to pull and structure data from JIRA/MBinside into Excel reports.</li>
-          </ul>
-        </section>
-
-      </main>
-
-      <aside>
-        <div class="card">
-          <div class="section-title">Quick Info</div>
-          <p><strong>Location:</strong> Stuttgart, Germany</p>
-          <p><strong>Email:</strong> mhetrechaitanya97@gmail.com</p>
-          <p><strong>Phone:</strong> +49 17671776873</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chaitanya-mhetre/" target="_blank">chaitanya-mhetre</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/chaitanyamhetre" target="_blank">chaitanyamhetre</a></p>
-
-          <div style="margin-top:12px">
-            <a href="#contact" style="display:inline-block;padding:10px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none">Contact Me</a>
-            <!-- If you want a CV download, put the CV PDF in the same folder and change the href below: -->
-            <!-- <a href="ChaitanyaMhetre_Lebenslauf.pdf" download style="display:inline-block;margin-left:8px;padding:10px 12px;border-radius:8px;border:1px solid #e6e9ef;text-decoration:none;color:var(--accent);background:white">Download CV</a> -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div>
+            <h3 class="mb-0">AI/ML Working Student</h3>
+            <div class="subheading mb-3">Mercedes-Benz AG</div>
+            <p>Worked on wirelist generation from wiring diagrams using OCR, ML, and transformer models.</p>
           </div>
+          <div class="text-primary">2024 – 2025</div>
         </div>
 
-        <div class="card" style="margin-top:18px">
-          <div class="section-title">Skills</div>
-          <div class="skill-list">
-            <span class="skill">Python</span>
-            <span class="skill">PyTorch</span>
-            <span class="skill">TensorFlow</span>
-            <span class="skill">Computer Vision</span>
-            <span class="skill">OCR</span>
-            <span class="skill">Transformers</span>
-            <span class="skill">Pandas</span>
-            <span class="skill">Azure ML</span>
-            <span class="skill">Power BI</span>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div>
+            <h3 class="mb-0">Master Thesis Researcher</h3>
+            <div class="subheading mb-3">ILH – University of Stuttgart</div>
+            <p>Developed multimodal ML models for GaN-HEMT fault diagnosis.</p>
           </div>
+          <div class="text-primary">2024 – 2025</div>
         </div>
 
-        <div class="card" style="margin-top:18px">
-          <div class="section-title">Education</div>
-          <p><strong>M.Sc. Electrical Engineering</strong><br>University of Stuttgart — Focus: automation, ML, deep learning</p>
-          <p style="margin-top:8px"><strong>B.E. Electrical Engineering</strong><br>University of Mumbai</p>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div>
+            <h3 class="mb-0">Working Student</h3>
+            <div class="subheading mb-3">Mercedes-Benz AG</div>
+            <p>Automation tools for data extraction & reporting using Python.</p>
+          </div>
+          <div class="text-primary">2023 – 2024</div>
         </div>
+      </div>
+    </section>
 
-        <div class="card" id="contact" style="margin-top:18px">
-          <div class="section-title">Contact</div>
-          <p>If you'd like to work together or have questions, email me at <a href="mailto:mhetrechaitanya97@gmail.com">mhetrechaitanya97@gmail.com</a> or connect on LinkedIn.</p>
-        </div>
-      </aside>
-    </div>
+    <hr class="m-0" />
 
-    <footer>
-      © <span id="year"></span> Chaitanya Mhetre — Built with ❤️
-    </footer>
-  </div>
+    <!-- PROJECTS -->
+    <section class="resume-section" id="projects">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Projects</h2>
+        <ul>
+          <li><strong>Wirelist Extraction</strong> – OCR + Transformer system for wiring diagram interpretation.</li>
+          <li><strong>Multimodal GaN-HEMT Fault Analysis</strong> – S-parameters + TDR data + transformers.</li>
+          <li><strong>Telematics Automation Tools</strong> – Python scripts for Excel/Reporting automation.</li>
+        </ul>
+      </div>
+    </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    <hr class="m-0" />
+
+    <!-- SKILLS -->
+    <section class="resume-section" id="skills">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Skills</h2>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline
